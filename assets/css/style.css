@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+/************ Font ************/
+
+/************ Gilroy ************/
+
+@font-face {
+    font-family: "Gilroy-medium";
+    src: url(../fonts/gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy-bold";
+    src: url(../fonts/gilroy/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy-extra-bold";
+    src: url(../fonts/gilroy/Gilroy-ExtraBold.ttf);
+}
+
+/************ Chronicle ************/
+
+@font-face {
+    font-family: "Chronicle";
+    src: url(../fonts/chronicle/Chronicle.otf);
+}
+
+
+/************ Elements ************/
+
+
+/************ structure ************/
+
+/***row***/
+
+.row-head{
+    margin-top: 6rem;
+}
+
+.row-info{
+    margin-top: 70rem;
+}
+
+.row{
+    margin-top: 20rem;
+}
+
+.row-footer{
+    margin-bottom: 10rem;
+}
+
+/***container***/
+
+.container-fluid{
+    width: 92%;
+    margin: auto;
+}
+
+.container{
+    width: 76%;
+    margin: auto;
+}
+
+/***title***/
+
+h1,h2{
+    font-family: "Chronicle";
+    text-transform: capitalize;
+    padding: 3.2rem 0;
+}
+
+h1{
+    font-size: 8.8rem;
+    line-height: 10rem;
+}
+
+h2{
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+}
+
+h3{
+    display: flex;
+    align-items: center; 
+    gap: 3.2rem; 
+    color: #FBD784;
+    font-family: "Gilroy-extra-bold";
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+}
+
+h4{
+    color: #FBD784;
+    font-family: "Gilroy-bold";
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding-bottom: 1.2rem;
+}
+
+/***other***/
+
+
+*{
+    color: #fff;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Gilroy-bold";
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+p{
+    font-family: "Gilroy-bold";
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.horizontal-line {
+    width: 7rem; 
+    height: 2px; 
+    background-color: #FBD784; 
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log a, .main-title a, .content a{
+    display: flex;
+    align-items: center; 
+    gap: 1rem; 
+}
+
+/************ Background ************/
+
+.background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 200vh;
+    background: 
+        linear-gradient(#0B1D2600 125vh, #0B1D26 175vh), 
+        url(../images/images/background-image.png);
+    background-size: contain; /* Ajuste l'image pour remplir l'espace sans déformation */
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: -1;
+}
+
+body {
+    background-color: #0B1D26;
+}
+
+/************ Header ************/
+
+nav ul li{
+    display: inline;
+    padding: 0 2rem;
+}
+
+/************ banner ************/
+
+.banner .item{
+    width: 80%;
+}
+
+/****** social *******/
+
+.social {
+    width: 24px;
+    height: 20rem;
+    position: relative;
+}
+
+.social p {
+    transform: rotate(90deg); 
+    text-align: center;
+    line-height: 2.2rem;
+    white-space: nowrap;
+}
+
+.social-icons{
+    position: absolute; 
+    bottom: 2.4rem; 
+    padding-left: 2px;
+}
+
+.social img {
+    width: 20px; 
+    height: 20px;
+    margin: 1.2rem 0;
+}
+
+/**** main title *****/
+
+.main-title{
+    width: 70%;
+}
+
+.main-title a img{
+    width: 16px;
+    height: 24px;
+}
+
+/***** slider *****/
+
+.slider{
+    position: fixed;
+    right: 4%;
+    top: 37%;
+    display: flex;
+    align-items: center;
+}
+
+.labels ul{
+    padding-right: 2rem;
+    text-align: right;
+}
+
+.labels li{
+    padding: 1.6rem 0;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slider-bar {
+    appearance: none;
+    width: 3px;
+    height: 20.8rem;
+    background: #ffffff6c;
+    outline: none;
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg);
+    border-radius: 10px;
+}
+
+.slider-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 6rem;
+    width: 3px;
+    background: #fff;
+}
+
+/************ Info ************/
+
+.content{
+    position: relative;
+}
+
+.number{
+    position: absolute;
+    top: -10rem;
+    left: 0;
+    width: 24rem;
+    z-index: 0;
+}
+
+.number p{
+    font-size: 24rem;
+    line-height: 24rem;
+    opacity: 0.1;
+}
+
+.text{
+    gap: 2.7rem;
+    width: 60rem;
+    margin-left: 15rem;
+}
+
+.content a{
+    margin-top: 2.7rem;
+}
+
+.content a span{
+    color: #FBD784;
+}
+
+.image img{
+    height: 72rem;
+}
+
+/************ Footer ************/
+
+footer .item{
+    align-items: baseline;
+}
+
+.footer-logo-text{
+    width: 50%;
+}
+
+.footer-logo-text p{
+    padding: 2.4rem 0;
+    width: 45%;
+}
+
+.copyright p{
+    font-family: "Gilroy-medium";
+    opacity: 0.5;
+    padding-top: 9.8rem;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.footer-link li{
+    text-transform: capitalize;
+    padding: 1.2rem 0;
+}
+
+.footer-link a{
+    font-family: "Gilroy-medium";
+}
